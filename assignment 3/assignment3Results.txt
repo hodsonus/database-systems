@@ -1,0 +1,153 @@
+--1
+JOHN
+MARK
+MICHAEL
+
+--2
+Center Peak
+North Maggie Mountain
+Whaleback
+Kearsarge Peak
+Lion Rock
+Midway Mountain
+Mount Hale
+Mount Langley
+Pilot Knob (S)
+Dragon Peak
+Mount Barnard
+Mount Guyot
+Mount Newcomb
+South Guard
+Thor Peak
+Angora Mountain
+Florence Peak
+Joe Devel Peak
+Mount McAdie
+Mount Rixford
+Muah Mountain
+Olancha Peak
+Moses Mountain
+Mount Williamson
+Needham Mountain
+
+--3
+DONNA
+ELIZABETH
+JOHN
+
+--4
+Angora Mountain
+Cartago Peak
+Center Peak
+Coyote Peaks
+Crag Peak
+Dragon Peak
+Kern Peak
+Lamont Peak
+Lone Pine Peak
+Mount Barnard
+Mount Bradley
+Mount Clarance King
+Mount Gardiner
+Mount Genevra
+Mount LeConte
+Mount Muir
+Mount Pickering
+Mount Stanford (S)
+Mount Whitney
+North Guard
+North Maggie Mountain
+Owens Peak
+Pilot Knob (S)
+Spanish Needle
+Triple Divide Peak
+University Peak
+Vandever Mountain
+
+--5
+Mount Langley
+Mount Whitney
+
+--6
+Kearsarge Peak
+Mount Whitney
+
+--7
+Mt Williamson|13747.7777777778
+Mt Langley|13561.0
+Mount Whitney|13493.2777777778
+Mt Brewer|13334.3571428571
+Mt Kaweah|12945.0
+Cirque Peak|12900.0
+Mt Clarence King|12838.375
+Triple Divide Peak|12657.375
+Mineral King|12280.4
+Sphinx Lakes|11717.0
+Kern Peak|11510.0
+Olancha|11301.5
+Lodgepole|11240.0
+Mt Silliman|11188.0
+Bartlett|11016.0
+Kern Lake|10545.0
+Sirretta Peak|9977.0
+Moses Mtn|9782.5
+Monache Mtn|9533.0
+Crag Peak|9480.0
+Silver City|9023.0
+Cannell Peak|8802.0
+Kearsarge Peak|8550.66666666667
+Owens Peak|8453.0
+Rockhouse Basin|8360.0
+Ninemile Canyon|8000.0
+Lament Peak|7635.0
+Onyx|6200.0
+
+--8
+Kearsarge Peak
+Mount Guyot
+Mount Langley
+Muah Mountain
+Olancha Peak
+Thor Peak
+Needham Mountain
+Mount Hale
+Mount Rixford
+Midway Mountain
+Moses Mountain
+South Guard
+Joe Devel Peak
+Mount McAdie
+Mount Newcomb
+Mount Williamson
+Dragon Peak
+Mount Barnard
+Lion Rock
+
+--9
+Corocoran to Whitney|1
+Great Western Divide|3
+Kaweahs and West|9
+Kearsarge Pass|4
+Kings Kern Divide|6
+Mineral King|1
+Olancha to Langley|3
+Southern Sierra|3
+Whitney to Williamson|5
+
+--10
+8
+13
+
+--11
+F|21.8181818181818
+M|15.2307692307692
+
+--12
+KENNETH
+MARY
+
+--13
+Mineral King|0.9
+
+--14
+KENNETH|MARY|40
