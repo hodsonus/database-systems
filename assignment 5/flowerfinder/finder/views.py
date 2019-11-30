@@ -19,11 +19,19 @@ def sightings(request):
         flower_comname = path[1].replace('_', ' ')
         query = 'SELECT * FROM sightings where name like "{}" order by sighted desc limit 10'.format(flower_comname)
         sightings = Sightings.objects.raw(query)
-        # for sighting in sightings:
-        #     print(sighting.person + sighting.location + sighting.sighted.strftime("%m/%d/%Y"))
-        resp = serialize('json', sightings)
-        print(resp)
-        return HttpResponse(resp)
+        data = []
+        for sighting in sightings:
+            data += [
+                        { 
+                            'person' : sighting.person,
+                            'location' : sighting.location,
+                            'sighted' : sighting.sighted.strftime("%m/%d/%Y")
+                        } 
+                    ]
+        # resp = serialize('json', sightings)
+        # print(resp)
+        # return HttpResponse(resp)
+        return JsonResponse(data, safe=False)
 
 def log(request):
     return render(request, 'log.html')
