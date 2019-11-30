@@ -1,4 +1,11 @@
 {% extends "layouts/master.html" %}
 {% block content %}
-<p>LOG</p>
+    <div class="w3-text-white w3-display-middle center">
+        <form method="post">
+        {% csrf_token %}
+        {{ flower_select_form.as_p}}
+        {{ new_sighting_form.as_p }}
+        <input type="submit" value="Submit new flower sighting."/>
+        </form>
+    </div>
 {% endblock %}

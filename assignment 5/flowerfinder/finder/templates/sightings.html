@@ -1,25 +1,62 @@
 {% extends "layouts/master.html" %}
 
 {% block content %}
+
+<body onload="populateTable();"></body> 
+
 <script>
-function fillTableOnChange(selected_value) {
-    console.log(selected_value);
+function populateTable() {
+    var dropdown = document.getElementById("id_flowers");
+    var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+    onSelectFormChange(selectedValue);
+}
+
+function onSelectFormChange(selected_value) {
     sightings_url = window.location.origin+window.location.pathname+selected_value.toLowerCase().replace(" ", "_")
-    //document.getElementById("member_type_academic_4").onChange=alert("It's Working");
     var request = new XMLHttpRequest();
     request.onreadystatechange=function(){
         if (request.readyState==4 && request.status==200){
-            console.log(request.responseText);
-            // update the table !
-            // To get the response use request.responseText;
+            responseJSON = JSON.parse(request.responseText)
+            updateTable(responseJSON)
         }
     }
     request.open("GET", sightings_url);
     request.send(null);
 }
+
+function updateTable(children) {
+    function addHeaders(table, keys) {
+        var row = table.insertRow();
+        for( var i = 0; i < keys.length; i++ ) {
+            var cell = row.insertCell();
+            cell.appendChild(document.createTextNode(keys[i]));
+        }
+    }
+
+    var table = document.createElement('table');
+    for( var i = 0; i < children.length; i++ ) {
+
+        var child = children[i];
+        if (i === 0) {
+            addHeaders(table, Object.keys(child));
+        }
+        var row = table.insertRow();
+        Object.keys(child).forEach(function(k) {
+            var cell = row.insertCell();
+            cell.appendChild(document.createTextNode(child[k]));
+        })
+    }
+
+    if (document.getElementById('flower-table').childElementCount === 0) {
+        document.getElementById('flower-table').appendChild(table);
+    }
+    else {
+        document.getElementById("flower-table").replaceChild(table, document.getElementById("flower-table").childNodes[0]);
+    }
+}
 </script>
     <div class="w3-text-white w3-display-middle center">
-        {{ form.as_p}}
-        <p> This is my table :) </p>
+        {{ flower_select_form.as_p}}
+        <div id="flower-table"></div>
     </div>
 {% endblock %}
