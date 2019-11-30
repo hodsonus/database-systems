@@ -4,5 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url('^$', views.index, name='index')
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    url('sightings', views.sightings, name='sightings'),
+    url('flowers', views.flowers, name='flowers'),
+    url('log', views.log, name='log'),
+    url('', views.index, name='index'),
+]
