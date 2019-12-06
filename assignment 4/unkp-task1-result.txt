@@ -231,3 +231,4 @@ Douglas dustymaiden|Jennifer|Double Mountain|2008-11-28
 Douglas dustymaiden|Brad|Shirley Peak|2007-08-18
 Douglas dustymaiden|Donna|Grouse Meadow|2011-11-28
 Douglas dustymaiden|Maria|Grouse Meadow|2014-08-16
+Douglas dustymaiden|Joe|Piute Peak|2007-02-17
